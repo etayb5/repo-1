@@ -68,7 +68,8 @@ def get_move(player: Player) -> Coords:
     :param player: the player whose turn it is to play
     :return: the coordinates the player chose
     """
-    row, col = input(f"{player}'s move: ").split()
+    row = input(f"{player}'s move row: ")
+    col = input(f"{player}'s move column: ")
     return int(row), int(col)
 
 
